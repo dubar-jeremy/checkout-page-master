@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+<main>
+  <div class="grid-container">
+    <h1>Checkout</h1>
+    <form>
+      <h2>Contact information</h2>
+
+
+      <label for="email">email</label>
+      <input class="email" type="email" name="email" id="email">
+
+      <label for="tel">Phone</label>
+      <input class="tel" type="tel" name="tel" id="tel">
+
+      <h2>Shipping address</h2>
+
+      <label for="name">Full name</label>
+      <input class="name" type="text" name="name" id="name">
+
+      <label for="address">Address</label>
+      <input class="address" type="text" name="address" id="address">
+
+      <label for="city">City</label>
+      <input class="city" type="text" name="city" id="city">
+
+
+      <div class="btn-input">
+        <div class="part1">
+          <label for="country">country:</label>
+          <select id="country">
+            <option value="">Your country</option>
+            <option value="france">France</option>
+            <option value="england">Angleterre</option>
+            <option value="spain">Espagne</option>
+          </select>
+        </div>
+        <div class="part2">
+          <label for="postalCode">Postal code</label>
+          <input class="postal-code" type="text" name="postalCode" id="postalCode">
+        </div>
+      </div>
+
+      <div>
+      <input type="checkbox">
+      <label>Save this information for next time</label>
+      </div>
+      <button type="submit">Continue</button>
+    </form>
+    <div class="payment-block">
+      <div class="inner-block">
+        <img src="img/photo1.png">
+        <div class="right-part">
+          <h2>Vintage backbag</h2>
+          <span class="new-price">54.99€</span>
+          <span class="old-price">94.99€</span>
+          <div class="click">
+            <span class="nbr-article">-</span>
+            <input type="text" value="1">
+            <span class="nbr-article">+</span>
+          </div>
+        </div>
+        <img src="img/photo2.png">
+        <div class="right-part">
+          <h2>Vintage backbag</h2>
+          <span class="new-price">54.99€</span>
+          <span class="old-price">94.99€</span>
+          <div class="click">
+            <span class="nbr-article">-</span>
+            <input type="text" value="1">
+            <span class="nbr-article">+</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="price-part">
+          <p>Shipping</p>
+          <p>19€</p>
+        </div>
+        <div class="price-part">
+          <p>Total</p>
+          <p>148.98€</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</main>
+<footer>
+  <p>Your name @ DevChallenges.io</p>
+</footer>
+<!--<span class="material-icons">email</span>
+<span class="material-icons">call</span>
+<span class="material-icons">account_circle</span>
+<span class="material-icons">home</span>
+<span class="material-icons">location_city</span>
+<span class="material-icons">public</span>
+<span class="material-icons">markunread_mailbox</span>-->
+</body>
+</html>

@@ -1,0 +1,193 @@
+/*
+Colors, fonts & reset
+*/
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*
+  Main area
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1em;
+}
+.grid-container h1 {
+  grid-row: 1/2;
+  color: #4E5150;
+  font-size: 1.5em;
+  margin-bottom: 0.8em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+}
+form h2 {
+  color: #333333;
+  font-size: 1.2em;
+}
+form .email {
+  background-color: transparent;
+  background-image: url("../icons/markunread_mailbox-24px.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  padding-left: 2.5em;
+  height: 2.3em;
+  border: 0.09em solid #BDBDBD;
+  border-radius: 0.3em;
+}
+form .tel {
+  background-color: transparent;
+  background-image: url("../icons/call-24px.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  padding-left: 2.5em;
+  height: 2.3em;
+  border: 0.09em solid #BDBDBD;
+  border-radius: 0.3em;
+}
+form .name {
+  background-color: transparent;
+  background-image: url("../icons/account_circle-24px.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  padding-left: 2.5em;
+  height: 2.3em;
+  border: 0.09em solid #BDBDBD;
+  border-radius: 0.3em;
+}
+form .address {
+  background-color: transparent;
+  background-image: url("../icons/home-24px.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  padding-left: 2.5em;
+  height: 2.3em;
+  border: 0.09em solid #BDBDBD;
+  border-radius: 0.3em;
+}
+form .city {
+  background-color: transparent;
+  background-image: url("../icons/location_city-24px.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  padding-left: 2.5em;
+  height: 2.3em;
+  border: 0.09em solid #BDBDBD;
+  border-radius: 0.3em;
+}
+form .postal-code {
+  width: 99%;
+  background-color: transparent;
+  background-image: url("../icons/public-24px.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  padding-left: 2.5em;
+  height: 2.3em;
+  border: 0.09em solid #BDBDBD;
+  border-radius: 0.3em;
+}
+form .btn-input {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  flex-wrap: wrap;
+}
+form .btn-input .part1 {
+  flex-basis: 50%;
+}
+form .btn-input .part2 {
+  flex-basis: 50%;
+}
+form button {
+  width: 40%;
+  align-self: end;
+}
+
+.payment-block {
+  grid-row: 2/3;
+  background: #F2F2F2;
+  border-radius: 0.5em;
+}
+
+.inner-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+  max-width: 385px;
+  max-height: 535px;
+  margin: 1em;
+}
+.inner-block h2 {
+  color: #4E5150;
+  display: inline;
+  font-size: 1em;
+  font-weight: normal;
+}
+.inner-block img {
+  width: 100%;
+  max-width: 175px;
+  max-height: 135px;
+  border-radius: 0.5em;
+}
+.inner-block .right-part {
+  display: flex;
+  flex-wrap: wrap;
+}
+.inner-block .right-part .new-price {
+  color: #F2994A;
+  margin-right: 1em;
+}
+.inner-block .right-part .old-price {
+  color: #4E5150;
+  text-decoration: line-through;
+}
+.inner-block .right-part .click {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: min-content;
+  background: transparent;
+  border: 0.1em solid #828282;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+.inner-block .right-part .click input {
+  background: transparent;
+  width: 20%;
+  border: none;
+}
+.inner-block .right-part .click .nbr-article {
+  background: #E0E0E0;
+  padding: 0.2em;
+}
+
+.price-part {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em;
+  border-top: 1px solid #BDBDBD;
+  color: #333333;
+}
+.price-part p:nth-child(1) {
+  color: #333333;
+  font-weight: bold;
+}
+.price-part p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=style.css.map */
