@@ -27,8 +27,6 @@ window.onload = function() {
           i--
           let items = document.querySelector(".nbr-value").value = i;
           let qty = parseInt(items);
-          let newPrice = initialPrice * qty;
-          document.querySelector(".new-price").innerHTML = newPrice;
           let oldPrice = qty * priceAfterDiscount;
           document.querySelector(".old-price").innerHTML = oldPrice;
           console.log(oldPrice);
