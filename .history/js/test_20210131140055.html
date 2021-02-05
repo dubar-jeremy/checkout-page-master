@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+p {
+  display: inline;
+}
+
+.item {
+  border: 1px solid red;
+  margin: 1rem;
+  padding: 1rem;
+}
+  </style>
+</head>
+<body>
+  <div class="item">
+    <h2>Prix :</h2>
+    <p class="price">10</p>
+    <div class="quantity-container">
+      <button class="btn btn-remove">-</button>
+      <input type="text" class="quantity" value="1" />
+      <button class="btn btn-add">+</button>
+    </div>
+  </div>
+  <div class="item">
+    <h2>Prix :</h2>
+    <p class="price">10</p>
+    <div class="quantity-container">
+      <button class="btn btn-remove">-</button>
+      <input type="text" class="quantity" value="1" />
+      <button class="btn btn-add">+</button>
+    </div>
+  </div>
+  <div class="item">
+    <h2>Prix :</h2>
+    <p class="price">10</p>
+    <div class="quantity-container">
+      <button class="btn btn-remove">-</button>
+      <input type="text" class="quantity" value="1" />
+      <button class="btn btn-add">+</button>
+    </div>
+  </div>
+  <div class="item">
+    <h2>Prix :</h2>
+    <p class="price">10</p>
+    <div class="quantity-container">
+      <button class="btn btn-remove">-</button>
+      <input type="text" class="quantity" value="1" />
+       <button class="btn btn-add">+</button>
+  
+    </div>
+  </div>
+  <script>
+    const items = document.querySelectorAll(".item");
+
+items.forEach((item) => {
+  const btns = item.querySelectorAll("button");
+  const price = item.querySelector(".price");
+  const quantity = item.querySelector(".quantity");
+  const [oldPrice, newPrice] = btns;
+
+  btnRemove.addEventListener("click", () => {
+    quantity.value--;
+    quantity.dispatchEvent(new Event("change"));
+  });
+
+  btnAdd.addEventListener("click", () => {
+    quantity.value++;
+    quantity.dispatchEvent(new Event("change"));
+  });
+
+  quantity.addEventListener("change", () => {
+    price.innerHTML = quantity.value * 10;
+  });
+});
+
+console.log(btns);
+
+  </script>
+</body>
+</html>
