@@ -8,7 +8,7 @@ Etape:
 
 - Formulaire HTML / Scss : fait
 
-- Ajout d'articles dans un panier avec mise à jour du prix et y appliquer une réduction en JS: en cours
+- Ajout d'articles et mise à jour du prix dynamiquement: en cours
 
 - Validation du formulaire coté client en JS: en cours
 
