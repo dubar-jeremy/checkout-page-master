@@ -1,4 +1,4 @@
-Un petit projet HTML / CSS / Javascript en cours sur le peu de temps libre que nous laisse l'école :-)
+Projet personnel d'un formulaire et panier d'articles en HTML / Scss / JS
 
 Objectif principal : Continuer l'apprentissage du JS et première approche de SASS / CSS grid.
 
