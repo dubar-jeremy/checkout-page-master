@@ -35,7 +35,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2em;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   place-items: center;
   justify-content: center;
@@ -84,7 +84,9 @@ form {
   .email {
     @include iconStyle;
     background-image: url("../icons/markunread_mailbox-24px.svg");
+    background-position: 0.5em center;
   }
+
   .tel {
     @include iconStyle;
     background-image: url("../icons/call-24px.svg");
@@ -105,6 +107,14 @@ form {
     @include iconStyle;
     width: 99%;
     background-image: url("../icons/public-24px.svg");
+  }
+
+  .fa-check {
+    color: green;
+  }
+
+  .fa-times {
+    color: red;
   }
 
   .form-btn {
@@ -228,15 +238,6 @@ form {
   p:nth-child(2) {
     font-size: 0.8em;
   }
-}
-
-.invalid {
-  display: none;
-  color: red;
-}
-
-.valid {
-  color: green;
 }
 
 @media screen and (min-width: 900px) {

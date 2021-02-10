@@ -82,6 +82,7 @@ form .email {
   border: 0.09em solid #bdbdbd;
   border-radius: 0.3em;
   background-image: url("../icons/markunread_mailbox-24px.svg");
+  background-position: 0.5em center;
 }
 
 form .tel {
@@ -138,6 +139,14 @@ form .postal-code {
   border-radius: 0.3em;
   width: 99%;
   background-image: url("../icons/public-24px.svg");
+}
+
+form .fa-check {
+  color: green;
+}
+
+form .fa-times {
+  color: red;
 }
 
 form .form-btn {
@@ -292,15 +301,6 @@ form button {
 
 .price-part p:nth-child(2) {
   font-size: 0.8em;
-}
-
-.invalid {
-  display: none;
-  color: red;
-}
-
-.valid {
-  color: green;
 }
 
 @media screen and (min-width: 900px) {
