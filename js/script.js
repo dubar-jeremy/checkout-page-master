@@ -2,7 +2,11 @@ window.onload = function () {
   document.getElementById("email").addEventListener("input", mailCheck);
   document.getElementById("tel").addEventListener("input", mobileCheck);
   document.getElementById("name").addEventListener("input", nameCheck);
-  document.getElementById("postalCode").addEventListener("input", postalCodeCheck);
+  document
+    .getElementById("postalCode")
+    .addEventListener("input", postalCodeCheck);
+
+  // TO DO : Regex and style errors message.
 
   function mailCheck() {
     let mailVerify = this.value;
@@ -14,7 +18,6 @@ window.onload = function () {
       span.style.color = "green";
       span.innerHTML = "Valide";
       span.classList.replace("require", "fa-check");
-      console.log(regex);
     } else {
       if (!span.classList.contains("fa-check")) {
         span.classList.add("fa-check");
@@ -22,7 +25,6 @@ window.onload = function () {
       span.classList.replace("fa-check", "fa-times");
       span.style.color = "red";
       span.innerHTML = " Adresse mail incorrect";
-      console.log(regex);
     }
 
     if (mailVerify.length == "") {
@@ -42,7 +44,6 @@ window.onload = function () {
       span.style.color = "green";
       span.innerHTML = "Valide";
       span.classList.replace("require", "fa-check");
-      console.log(regex);
     } else {
       if (!span.classList.contains("fa-check")) {
         span.classList.add("fa-check");
@@ -50,7 +51,6 @@ window.onload = function () {
       span.classList.replace("fa-check", "fa-times");
       span.style.color = "red";
       span.innerHTML = " Numéro incorrect";
-      console.log(regex);
     }
 
     if (mailVerify.length == "") {
@@ -70,7 +70,6 @@ window.onload = function () {
       span.style.color = "green";
       span.innerHTML = "Valide";
       span.classList.replace("require", "fa-check");
-      console.log(regex);
     } else {
       if (!span.classList.contains("fa-check")) {
         span.classList.add("fa-check");
@@ -78,7 +77,6 @@ window.onload = function () {
       span.classList.replace("fa-check", "fa-times");
       span.style.color = "red";
       span.innerHTML = " Numéro incorrect";
-      console.log(regex);
     }
 
     if (mailVerify.length == "") {
@@ -98,7 +96,6 @@ window.onload = function () {
       span.style.color = "green";
       span.innerHTML = "Valide";
       span.classList.replace("require", "fa-check");
-      console.log(regex);
     } else {
       if (!span.classList.contains("fa-check")) {
         span.classList.add("fa-check");
@@ -106,7 +103,6 @@ window.onload = function () {
       span.classList.replace("fa-check", "fa-times");
       span.style.color = "red";
       span.innerHTML = " Numéro incorrect";
-      console.log(regex);
     }
 
     if (mailVerify.length == "") {
@@ -116,40 +112,42 @@ window.onload = function () {
     }
   }
 
-  // Items
+  const articles = document.querySelectorAll(".details-article");
 
-  const plus = document.querySelector(".plus").addEventListener("click", increase);
-  const minus = document.querySelector(".minus").addEventListener("click", decrease);
+  articles.forEach((article) => {
+    const btns = article.querySelectorAll("button");
+    const oldPrice = article.querySelector(".old-price");
+    const newPrice = article.querySelector(".new-price");
+    let oldPriceValue = parseFloat(oldPrice.textContent).toFixed(2);
+    let newPriceValue = parseFloat(newPrice.textContent).toFixed(2);
+    const quantity = article.querySelector(".quantity");
 
-  let i = 0;
-  let initialPrice = 50;
-  let priceAfterDiscount = increase();
+    const [btnRemove, btnAdd] = btns;
 
-  function increase() {
-    // price * 10 / 100 = 10% reduce
-    i++;
+    btnRemove.addEventListener("click", () => {
+      if (quantity.value <= 1) {
+        return false;
+      }
+      quantity.value--;
+      quantity.dispatchEvent(new Event("change"));
+    });
 
-    let items = (document.querySelector(".nbr-value").value = i);
-    let qty = parseInt(items);
-    let newPrice = initialPrice * qty;
-    let priceBeforeDiscount = newPrice;
-    document.querySelector(".old-price").innerHTML = priceBeforeDiscount;
-    newPrice -= (newPrice * 10) / 100;
-    let priceAfterDiscount = newPrice;
-    document.querySelector(".new-price").innerHTML = priceAfterDiscount;
-    return priceAfterDiscount;
-  }
+    btnAdd.addEventListener("click", () => {
+      quantity.value++;
+      quantity.dispatchEvent(new Event("change"));
+    });
 
-  function decrease() {
-    if (i >= 1) {
-      i--;
-      let items = (document.querySelector(".nbr-value").value = i);
-      let qty = parseInt(items);
-      let newPrice = initialPrice * qty;
-      document.querySelector(".new-price").innerHTML = newPrice;
-      let oldPrice = qty * priceAfterDiscount;
-      document.querySelector(".old-price").innerHTML = oldPrice;
-      console.log(oldPrice);
-    }
-  }
+    quantity.addEventListener("change", () => {
+      let prices = document.querySelectorAll(".new-price");
+      oldPrice.textContent = quantity.value * oldPriceValue;
+      newPrice.textContent = quantity.value * newPriceValue;
+      let totalContainer = document.querySelector(".total");
+      let totalPrice = 0;
+      for (price of prices) {
+        totalPrice += parseFloat(price.textContent);
+      }
+
+      totalContainer.textContent = totalPrice;
+    });
+  });
 };
