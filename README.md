@@ -30,7 +30,6 @@
   - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 <!-- OVERVIEW -->
 
@@ -38,7 +37,8 @@
 
 ![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
 
-I completed this challenge in december 2020. Pretty simple HTML / CSS project that's why I decided to learn javascript and add some features to it.
+I completed this challenge in december 2020.
+Then I've learnt javascrip at school and I decided to add my own features to practice it.
 
 ### Built With
 
@@ -53,6 +53,11 @@ I completed this challenge in december 2020. Pretty simple HTML / CSS project th
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
+
+Bonus :
+
+sum of articles
+output total prices
 
 ## How To Use
 
