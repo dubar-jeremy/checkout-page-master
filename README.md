@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://dubar-jeremy.github.io/checkout-page-master/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://devchallenges.io/solutions/P5gZp1IF0UKSP5r1PQbg">
       Solution
     </a>
     <span> | </span>
@@ -35,7 +35,8 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://raw.githubusercontent.com/dubar-jeremy/checkout-page-master/main/desktop.png)
+![screenshot](https://raw.githubusercontent.com/dubar-jeremy/checkout-page-master/main/mobile.png)
 
 I completed this challenge in december 2020.
 Then I've learnt javascrip at school and I decided to add my own features to practice it.
@@ -44,9 +45,9 @@ Then I've learnt javascrip at school and I decided to add my own features to pra
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [HTML](https://tailwindcss.com/)
-- [CSS](https://reactjs.org/)
-- [JS](https://vuejs.org/)
+- [HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
+- [JS](https://developer.mozilla.org/fr/docs/Web/JavaScript)
 
 ## Features
 
