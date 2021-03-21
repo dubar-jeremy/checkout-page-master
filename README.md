@@ -69,4 +69,4 @@ $ git clone https://github.com/dubar-jeremy/checkout-page-master.git
 
 ## Contact
 
-- Twitter [@your-twitter](https://{twitter.com/JeremyDubar})
+- Twitter [@jeremydubar](https://{twitter.com/JeremyDubar})
