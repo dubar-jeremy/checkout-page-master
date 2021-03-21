@@ -217,6 +217,11 @@ form {
         background: $background-nbr-article;
         padding: 0.2em;
       }
+
+      .btn {
+        background: none;
+        border: none;
+      }
     }
   }
 }

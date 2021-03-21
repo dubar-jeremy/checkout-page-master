@@ -5,12 +5,10 @@ Colors, fonts & reset
   font-family: "Montserrat";
   src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
-
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -22,24 +20,17 @@ body {
   Main area
 */
 .grid-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 2em;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   place-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .grid-container h1 {
   display: inline;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
+  grid-row: 1/2;
   color: #4e5150;
   font-size: 1.5em;
   margin-bottom: 0.8em;
@@ -47,32 +38,23 @@ body {
 }
 
 form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 form h2 {
   color: #333333;
   font-size: 1.2em;
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
-
 form input {
   width: 100%;
   margin-bottom: 1em;
   margin-top: 0.5em;
 }
-
-form input[type="checkbox"] {
+form input[type=checkbox] {
   width: inherit;
 }
-
 form .email {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -84,7 +66,6 @@ form .email {
   background-image: url("../icons/markunread_mailbox-24px.svg");
   background-position: 0.5em center;
 }
-
 form .tel {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -95,7 +76,6 @@ form .tel {
   border-radius: 0.3em;
   background-image: url("../icons/call-24px.svg");
 }
-
 form .name {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -106,7 +86,6 @@ form .name {
   border-radius: 0.3em;
   background-image: url("../icons/account_circle-24px.svg");
 }
-
 form .address {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -117,7 +96,6 @@ form .address {
   border-radius: 0.3em;
   background-image: url("../icons/home-24px.svg");
 }
-
 form .city {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -128,7 +106,6 @@ form .city {
   border-radius: 0.3em;
   background-image: url("../icons/location_city-24px.svg");
 }
-
 form .postal-code {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -140,204 +117,151 @@ form .postal-code {
   width: 99%;
   background-image: url("../icons/public-24px.svg");
 }
-
 form .fa-check {
   color: green;
 }
-
 form .fa-times {
   color: red;
 }
-
 form .form-btn {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 1em;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
-
 form .form-btn .select-country {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-basis: 50%;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 form .form-btn .select-country label {
   width: 100%;
   text-align: center;
 }
-
 form .form-btn .select-country select {
   height: 2.3em;
   padding-left: 2.5em;
   margin-bottom: 1em;
   margin-top: 0.5em;
 }
-
 form .form-btn .input-postal-code {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  flex-basis: 50%;
 }
-
 form button {
   width: 40%;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  align-self: end;
 }
 
 .checkout-container {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
+  grid-row: 2/3;
   background: #f2f2f2;
   border-radius: 0.5em;
 }
 
 .inner-block {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 2em;
   max-width: 385px;
   max-height: 535px;
   margin: 1em;
 }
-
 .inner-block h2 {
   color: #4e5150;
   display: inline;
   font-size: 1em;
   font-weight: normal;
 }
-
 .inner-block img {
   width: 100%;
   max-width: 175px;
   max-height: 135px;
   border-radius: 0.5em;
 }
-
 .inner-block .details-article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .inner-block .details-article .new-price {
   color: #f2994a;
   margin-right: 1em;
 }
-
 .inner-block .details-article .old-price {
   color: #4e5150;
   text-decoration: line-through;
 }
-
 .inner-block .details-article .click {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   width: 70%;
-  height: -webkit-min-content;
-  height: -moz-min-content;
   height: min-content;
   background: transparent;
   border: 0.1em solid #828282;
   border-radius: 0.2em;
   padding: 0.5em;
 }
-
 .inner-block .details-article .click input {
   background: transparent;
   width: 20%;
   border: none;
 }
-
 .inner-block .details-article .click .nbr-article {
   background: #e0e0e0;
   padding: 0.2em;
 }
+.inner-block .details-article .click .btn {
+  background: none;
+  border: none;
+}
 
 .price-part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 90%;
   margin: 0 auto;
   padding: 1em;
   border-top: 1px solid #bdbdbd;
   color: #333333;
 }
-
 .price-part p:nth-child(1) {
   color: #333333;
   font-weight: bold;
 }
-
 .price-part p:nth-child(2) {
   font-size: 0.8em;
 }
 
 @media screen and (min-width: 900px) {
   .grid-container {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 100px auto 100px;
-        grid-template-rows: 100px auto 100px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px auto 100px;
     justify-items: start;
   }
+
   h1 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
+    grid-row: 1/2;
+    grid-column: 1/-1;
   }
+
   .checkout-container {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2 / 3;
+    grid-row: 2/3;
+    grid-column: 2/3;
     margin: 0 auto;
     padding: 2em;
   }
+
   .form {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2 / 3;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
+
   footer {
     text-align: center;
     padding: 2em;
   }
 }
+
 /*# sourceMappingURL=style.css.map */

@@ -57,8 +57,7 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 Bonus :
 
-sum of articles
-output total prices
+- basket
 
 ## How To Use
 
