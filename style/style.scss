@@ -47,6 +47,21 @@ body {
     font-size: 1.5em;
     margin-bottom: 0.8em;
     text-align: center;
+    margin-top: 0.8em;
+  }
+
+  .continue-btn {
+    background-color: #f2994a;
+    width: 150px;
+    height: 54px;
+    color: white;
+    border-radius: 1em;
+    border: 1px solid;
+    margin-top: 1em;
+  }
+
+  button:hover {
+    cursor: pointer;
   }
 }
 
@@ -245,6 +260,18 @@ form {
   }
 }
 
+footer {
+  text-align: center;
+  height: 5em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  p {
+    margin-top: 5em;
+  }
+}
+
 @media screen and (min-width: 900px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -270,6 +297,10 @@ form {
 
   footer {
     text-align: center;
-    padding: 2em;
+    height: 10em;
+
+    p {
+      margin-top: 5em;
+    }
   }
 }

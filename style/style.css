@@ -35,6 +35,19 @@ body {
   font-size: 1.5em;
   margin-bottom: 0.8em;
   text-align: center;
+  margin-top: 0.8em;
+}
+.grid-container .continue-btn {
+  background-color: #f2994a;
+  width: 150px;
+  height: 54px;
+  color: white;
+  border-radius: 1em;
+  border: 1px solid;
+  margin-top: 1em;
+}
+.grid-container button:hover {
+  cursor: pointer;
 }
 
 form {
@@ -234,6 +247,17 @@ form button {
   font-size: 0.8em;
 }
 
+footer {
+  text-align: center;
+  height: 5em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+footer p {
+  margin-top: 5em;
+}
+
 @media screen and (min-width: 900px) {
   .grid-container {
     grid-template-columns: 1fr 1fr;
@@ -260,7 +284,10 @@ form button {
 
   footer {
     text-align: center;
-    padding: 2em;
+    height: 10em;
+  }
+  footer p {
+    margin-top: 5em;
   }
 }
 
