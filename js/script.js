@@ -2,15 +2,16 @@ window.onload = function () {
   document.getElementById("email").addEventListener("input", mailCheck);
   document.getElementById("tel").addEventListener("input", mobileCheck);
   document.getElementById("name").addEventListener("input", nameCheck);
-  document
-    .getElementById("postalCode")
-    .addEventListener("input", postalCodeCheck);
+  document.getElementById("postalCode").addEventListener("input", postalCodeCheck);
 
   // TO DO : Regex and style errors message.
 
   function mailCheck() {
     let mailVerify = this.value;
-    let regex = /^[a-zA-Z]*$/.test(mailVerify);
+    let regex =
+      /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
+        mailVerify
+      );
     let span = document.querySelector(".checkMail");
 
     if (regex) {
@@ -62,7 +63,7 @@ window.onload = function () {
 
   function nameCheck() {
     let mailVerify = this.value;
-    let regex = /^[a-zA-Z]*$/.test(mailVerify);
+    let regex = /^[a-zA-Zéèîûu-\s?]*$/.test(mailVerify);
     let span = document.querySelector(".checkName");
 
     if (regex) {
@@ -76,7 +77,7 @@ window.onload = function () {
       }
       span.classList.replace("fa-check", "fa-times");
       span.style.color = "red";
-      span.innerHTML = " Numéro incorrect";
+      span.innerHTML = " Name incorrect";
     }
 
     if (mailVerify.length == "") {
@@ -151,14 +152,3 @@ window.onload = function () {
     });
   });
 };
-
-function b() {
-  function a() {
-    console.log(foo);
-  }
-  let foo = 1;
-  a();
-}
-
-let foo = 2;
-b();
