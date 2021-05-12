@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://dubar-jeremy.github.io/checkout-page-master/">
+    <a href="https://checkout-page-master.jdubar.fr">
       Demo
     </a>
     <span> | </span>
